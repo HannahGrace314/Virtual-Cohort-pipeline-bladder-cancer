@@ -5,13 +5,10 @@
 % Description: Finds the virtual mouse that best replicates the dynamics 
 % of each original experimental mouse.
 % Uses: Bladder_Data_allmice_02b.m, BladderFunc_01.m, 
-% ModelCost_ultrasound_04b.m, and virtualcohort_Anderson_2026.mat
+% ModelCost_ultrasound_04b.m, and the output from virtualcohort_numsim_06b.m
+% (namely, variables vc_param, vc_initialcondition, and num_cohorts)
 
-%% Pull virtual cohort, ODE, and ultrasound data
-
-% Virtual Cohort
-filename = 'virtualcohort_Anderson_2026.mat'; % has vc_param and vc_initialcondition
-load(filename)
+%% Pull ODE and ultrasound data
 
 % ODE
 BCFunc = @BladderFunc_01;
@@ -55,21 +52,22 @@ tickwidth = 0.8;
 width = 2;
 fs = 17;
 cohort_names = ["Untreated","Gem", "OT-1", "Gem+OT-1"];
-plotcolor = [34/255, 168/255, 132/255; % cancer (green)
-             68/255, 119/255, 170/255; % t cell (blue)
-             170/255, 51/255, 119/255; % mdsc (pink)
-             238/255, 119/255, 51/255; % gem (orange) %[241, 193,0]./255 
-             0.5 0.5 0.5;              % total (black)
-             147/255 145/255 1;        % purple
-             0 0.95 0.95;              % cyan
-             0.2, 0.9, 0.7;            % bright green
-             0.4, 0.7, 1.0;            % bright blue
-             1.0, 0.2, 0.6;            % neon pink
-             1.0, 0.6, 0.2;            % neon orange
-             0.8, 0.8, 0.8;            % light grey
-             1.0, 0.8, 0.0;            % neon yellow
-             0.7, 0.7, 1.0;            % bright purple
-             0 0.6 0.6];               % teal
+plotcolor = [34/255,  168/255, 132/255; % green
+             68/255,  119/255, 170/255; % blue
+             170/255,  51/255, 119/255; % pink
+             241/255, 193/255,       0; % yellow
+             0.5 0.5 0.5;               % dark grey
+             147/255, 145/255,       1; % purple
+             238/255, 119/255,  51/255; % orange
+             0 0.95 0.95;               % cyan
+             0.2, 0.9, 0.7;             % bright green
+             0.4, 0.7, 1.0;             % bright blue
+             1.0, 0.2, 0.6;             % neon pink
+             1.0, 0.8, 0.0;             % neon yellow
+             0.8, 0.8, 0.8;             % light grey
+             1.0, 0.6, 0.2;             % neon orange
+             0.7, 0.7, 1.0;             % bright purple
+             0 0.6 0.6];                % teal
 
 % -------------------- Plot dynamics comparison figure --------------------
 figure
