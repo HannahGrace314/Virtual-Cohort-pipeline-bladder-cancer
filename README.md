@@ -4,7 +4,7 @@ Abstract: Even under the same treatment, responses can vary. Virtual cohorts bui
 
 Code is organized as follows:
 
-<img width="3900" height="3049" alt="image" src="https://github.com/user-attachments/assets/02c2776d-17c2-4925-93fe-a704dc6773bc" />
+<img width="3876" height="3038" alt="image" src="https://github.com/user-attachments/assets/2f1c8d21-74a6-4208-a0e4-878d2ae62608" />
 
 
 External code can be found at the following links: 
@@ -14,5 +14,9 @@ fminsearch.m -> https://www.mathworks.com/matlabcentral/fileexchange/8277-fminse
 eFAST package -> http://malthus.micro.med.umich.edu/lab/usadata/
 
 hatchfill2.m -> https://www.mathworks.com/matlabcentral/fileexchange/53593-hatchfill2
+
+legendflex.m -> https://www.mathworks.com/matlabcentral/fileexchange/31092-legendflex-m-a-more-flexible-customizable-legend
+
+getpos.m -> https://www.mathworks.com/matlabcentral/fileexchange/13927-setpos-1-2-getpos-1-2?s_tid=FX_rc3_behav
 
 violinplot.m and violin.m -> https://github.com/bastibe/Violinplot-Matlab
