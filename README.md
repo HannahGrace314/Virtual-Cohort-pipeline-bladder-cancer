@@ -9,7 +9,7 @@ Code is organized as follows:
 
 External code can be found at the following links: 
 
-fminsearch.m -> https://www.mathworks.com/matlabcentral/fileexchange/8277-fminsearchbnd-fminsearchcon
+fminsearchbnd.m -> https://www.mathworks.com/matlabcentral/fileexchange/8277-fminsearchbnd-fminsearchcon
 
 eFAST package -> http://malthus.micro.med.umich.edu/lab/usadata/
 
